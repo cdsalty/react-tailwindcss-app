@@ -6,11 +6,11 @@ import './App.css';
 const App = () => {
 
   const [cards, setCards] = useState([])
-
+  console.log(cards);
   return (
     <div>
       <h1 className="flex flex-col">
-        <div className="flex justify-center bg-blue-300">
+        <div className="flex justify-center bg-blue-600">
           <h1 className="text-3xl text-white py-2">Pokemon Search</h1>
         </div>
         <div className="flex flex-col">
