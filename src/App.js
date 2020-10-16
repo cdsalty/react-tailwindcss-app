@@ -6,7 +6,7 @@ import './App.css';
 const App = () => {
 
   const [cards, setCards] = useState([])
-  console.log(cards);
+
   return (
     <div>
       <h1 className="flex flex-col">
@@ -24,21 +24,3 @@ const App = () => {
 
 export default App;
 
-
-/*
-#7400B8
-#6930C3
-#5E60CE
-#5390D9
-#4EA8DE
-#48BFE3
-soltis: {
-    "100": "#7400B8",
-    "200": "6930C3",
-    "300": "5E60CE",
-    "400": "5390D9",
-    "500": "4EA8DE",
-    "600": "48BFE3"
-  }
-
-*/
