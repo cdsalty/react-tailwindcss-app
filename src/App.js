@@ -7,7 +7,7 @@ import './App.css';
 
 const App = () => {
 
-  const [cards, setCards] = useState({});
+  const [cards, setCards] = useState([]);
 
   useEffect(() => {
     fetchFormData();
