@@ -1,22 +1,26 @@
 import React from 'react'
 
 
-const CardList = ({ data }) => {
-  // console.log(props.list);
-  console.log('CARDS ARE:', data.cards)  // array of 50 objects
-  console.log('cards are really', data[0])
-  console.log("I should be able to use data[0].name and it list out a name but it doesn't work??? WHY?!!!!")
-  console.log("something to do with async and await??? I see the original output is blank.")
+const CardList = ({ cardData }) => {
+  console.log(cardData);
+  const lengthOfCards = cardData.length;
+  console.log(lengthOfCards)
   return (
     <div>
-      <h2>{data.name}</h2>
+      <ul>
+        {cardData.map((card) => <li>{card.name}</li>)}
+
+      </ul>
     </div>
-  );
+  )
 }
 
-export default CardList;
+export default CardList
 
 
-// cards.length > 0 ? (
-//   <ul>{cards.map(card => <li>{card.name}</li>)}</ul>
-// ) :
+
+/*
+cards.length > 0 ? (
+  <ul>{cards.map(card => <li>{card.name}</li>)}</ul>
+) :
+*/
