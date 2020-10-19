@@ -10,7 +10,6 @@ const App = () => {
 
   const [cards, setCards] = useState([]);
 
-
   useEffect(() => {
     fetchData();
   }, []);
@@ -29,8 +28,6 @@ const App = () => {
       console.error(error);
     }
   }
-
-
 
   return (
     <div className="flex flex-col">
